@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Desa Sungai Langka</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo_desasula.jpg" rel="icon">
+  <link href="assets/img/logo_desasula.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+
+  <!-- Template Main CSS File -->
+
+  <!-- Data Chart Kepala Keluarga -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Desa', 'KK', 'Laki-laki', 'Perempuan', 'Jumlah'],
+          ['Dusun I',  243,  448,        417,        865],
+          ['Dusun II',  98,   198,       203,        401],
+          ['Dusun III',  149, 235,       228,        463],
+          ['Dusun IV',   119,  221,      205,        426],
+          ['Dusun V',   117,   209,      208,        417],
+          ['Dusun VI',  147,   259,      229,        488],
+          ['Dusun VII',  157,   288,     270,        558],
+          ['Dusun VIII',  175,  321,     320,        641],
+          ['Dusun IX',    132,  230,     231,        461],
+          ['Dusun X',     218,  270,     303,        791]
+        ]);
+
+        var options = {
+          title : 'Jumlah Penduduk berdasarkan Kepala Keluarga',
+          vAxis: {title: 'Sungai Langka'},
+          hAxis: {title: 'Januari 2016'},
+          seriesType: 'bars',
+          series: {4: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div_kk'));
+        chart.draw(data, options);
+      }
+  </script>
+
+  <!-- Data Chart Profesi -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Desa', 'Petani', 'Buruh', 'PNS', 'Wiraswasta', 'TNI/POLRI', 'Lain-lain'],
+          ['Dusun I',  165,    171,     35,      75,            3,        106],
+          ['Dusun II',  136,   91,      28,     142,            0,        76],
+          ['Dusun III',  136,  116,     64,     74,             0,        152],
+          ['Dusun IV',  151,    82,     75,     74,            17,        131],
+          ['Dusun V',   166,    81,     23,    135,            11,         83],
+          ['Dusun VI',  167,    90,     43,    135,            22,        145],
+          ['Dusun VII',  166,   81,     53,    205,            13,         74],
+          ['Dusun VIII',  169,  106,    50,    115,            14,         91],
+          ['Dusun IX',    156,  162,    30,    115,            10,        116],
+          ['Dusun X',     141,  150,    22,    129,             5,         97]
+        ]);
+
+        var options = {
+          title : 'Jumlah Penduduk berdasarkan Pekerjaan',
+          vAxis: {title: 'Sungai Langka'},
+          hAxis: {title: 'Januari 2016'},
+          seriesType: 'bars',
+          series: {6: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div_prof'));
+        chart.draw(data, options);
+      }
+  </script>
+
+    <!-- Data Chart Pendidikan -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Desa', 'Belum Sekolah', 'Tamat SMP', 'Tamat SLTA', 'D1/D2/D3', 'S1', 'S2'],
+          ['Dusun I',    95,            125,          269,         45,      25,   20],
+          ['Dusun II',  100,            130,          145,         50,      30,   25],
+          ['Dusun III',  89,            119,          134,         39,      19,   14],
+          ['Dusun IV',   96,            126,          141,         46,      26,   21],
+          ['Dusun V',   127,            157,          173,         77,      57,   52],
+          ['Dusun VI',  114,            144,          159,         64,      44,   39],
+          ['Dusun VII', 101,            131,          146,         51,      31,   26],
+          ['Dusun VIII',116,            146,          161,         66,      46,   41],
+          ['Dusun IX',   98,            128,          143,         48,      28,   23],
+          ['Dusun X',   136,            166,          181,         86,      66,   61]
+        ]);
+
+        var options = {
+          title : 'Jumlah Penduduk berdasarkan Pendidikan',
+          vAxis: {title: 'Sungai Langka'},
+          hAxis: {title: 'Januari 2016'},
+          seriesType: 'bars',
+          series: {6: {type: 'line'}}
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div_pendidikan'));
+        chart.draw(data, options);
+      }
+  </script>  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">Desa Sungai Langka</a></h1>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Beranda</a></li>
+          <li class="dropdown"><a href="#"><span>Artikel</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#why-us">Sejarah</a></li>
+              <li><a class="nav-link scrollto" href="#datapenduduk">Data Penduduk</a></li>
+              <li><a class="nav-link scrollto" href="#geo">Geografis</a></li>
+              <li><a class="nav-link scrollto" href="#apbdesa">ABPDesa</a></li>
+              <li><a class="nav-link scrollto" href="#pariwisata">Pariwisata dan Rekreasi</a></li>
+              <li><a class="nav-link scrollto" href="#struktur">Struktur Desa</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#portfolio">Galeri</a> </li>
+          <li><a class="nav-link scrollto" href="#contact">Kontak</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <h1>Selamat Datang di Desa Sungai Langka</h1>
+          <h2>Desa Sungai Langka, Kecamatan Gedong Tataan, Kabupaten Pesawaran, Lampung.</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="https://youtu.be/CY32xNGEVIg?si=vwEncGnKza-Tni6A" class="glightbox btn-watch-video scrollto"><i
+                class="bi bi-play-circle"></i><span>Video Profil Desa Sungai Langka</span></a>
+          </div>
+        </div>
+        <div class="col-lg-3 order-1 order-lg-5" style="display: flex; justify-content: flex-end; align-items: center; padding: 0;">
+          <img src="assets/img/logo_desasula.jpg" class="img-fluid animated" alt="" style="max-width: 80%; height: auto;">
+        </div>                     
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= About Us Section ======= -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Visi Dan Misi</h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <div style='text-align:center'>
+            <strong> Visi </strong>
+          </div>
+          <div style='text-align:center'> <em>Terwujudkan Sungai Langka Menjadi Desa Wisata Berbasis Masyarakat dan
+          Potensi Kearifan Lokal Yang “SIMPATIK”</em> </div>
+
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0">
+          <div style="text-align: center;"> <strong> Misi </strong>
+          </div>
+          </i>
+          <div style="text-align: left;">
+            <em>
+          <p><strong>BIDANG PENYELENGGARAAN PEMERINTAHAN DESA</strong></p>
+              <ol>
+                <li>Meningkatkan pelayanan prima kepada masyarakat dengan cara yang mudah, cepat, dan birokrasi yang luwes.</li>
+                <li>Menciptakan pemerintahan yang bersih, transparan, dan akuntabel.</li>
+                <li>Meningkatkan SDM perangkat desa untuk meningkatkan kinerja dan pelayanan sesuai dengan peraturan perundang-undangan yang berlaku.</li>
+                <li>Mempermudah dan mempercepat pembuatan perizinan untuk usaha masyarakat yang tidak bertentangan dengan adat, norma, agama, budaya, dan sosial masyarakat.</li>
+                <li>Mendorong dan memaksimalkan BUMDES untuk mengembangkan usaha guna meningkatkan pendapatan asli desa.</li>
+              </ol>
+          
+              <p><strong>BIDANG PEMBANGUNAN</strong></p>
+              <ol>
+                <li>Membangun infrastruktur dan mental spiritual sesuai dengan aspirasi dan skala prioritas.</li>
+                <li>Membangun spot-spot wisata di masing-masing dusun sesuai dengan potensi dan antusias masyarakat.</li>
+                <li>Meningkatkan infrastruktur jalan lingkungan dan sarana prasarana umum di dusun-dusun sesuai dengan kebutuhan dan kemampuan keuangan desa.</li>
+                <li>Meningkatkan fasilitasi sarana dan prasarana olahraga dengan kemampuan sendiri dan/atau bantuan dari pihak terkait yang tidak mengikat.</li>
+                <li>Mencari sumber mata air baru untuk meningkatkan pelayanan kebutuhan air bersih masyarakat.</li>
+              </ol>
+          
+              <p><strong>BIDANG PEMBINAAN MASYARAKAT</strong></p>
+              <ol>
+                <li>Meningkatkan peran dan kemampuan lembaga-lembaga di desa untuk membantu mempercepat kemajuan pembangunan desa.</li>
+                <li>Memberikan bekal keterampilan kepada lembaga kemasyarakatan agar dapat menjadi motivator dan dinamisator yang handal dalam meningkatkan peran serta masyarakat dalam pembangunan desa.</li>
+                <li>Membina dan menginventarisir kelompok-kelompok pengajian di desa untuk meningkatkan kualitas mental dan moral masyarakat serta menciptakan generasi cerdas dan berakhlakul karimah.</li>
+                <li>Memberikan pembekalan kepada pemuda-pemudi agar dapat menjadi agen-agen pariwisata yang ramah, santun, dan kreatif.</li>
+              </ol>
+          
+              <p><strong>BIDANG PEMBERDAYAAN MASYARAKAT</strong></p>
+              <ol>
+                <li>Meningkatkan peran serta pemuda dalam setiap kegiatan di desa.</li>
+                <li>Meningkatkan peran serta kaum wanita melalui KWT dan UKM untuk menghasilkan produk unggulan desa yang berdaya saing.</li>
+                <li>Meningkatkan dan memanfaatkan lahan pekarangan sebagai sumber tambahan penghasilan keluarga dengan menggalakkan penanaman tanaman sayuran dan obat-obatan keluarga.</li>
+                <li>Membentuk asosiasi petani ternak untuk meningkatkan kualitas ternak dan menjaga kestabilan harga ternak di pasaran.</li>
+              </ol>
+            </em>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section><!-- End About Us Section -->
+
+  <!-- ======= Why Us Section ======= -->
+  <main id="main">
+
+    <section id="why-us" class="why-us section-bg">
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+
+            <div class="content">
+              <h3> <strong>Profil Desa</strong></h3>
+              <p> Berdirinya Desa Sungai Langka </p>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#accordion-list-1"><span>01</span>
+                    Asal Mula Desa Sungai Langka <i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
+                    <p class="fst-italic">
+                      Desa Sungai Langka awal mulanya berasal dari areal Perkebunan Asing (Belanda) yang dibumihanguskan 
+                      oleh bala tentara pendudukan Jepang pada tahun 1945. Kemudian pada tahun 1945 tanah bekas perkebunan itu dikelola kembali 
+                      dan yang bertindak sebagai koordinatornya adalah Bapak Sabichun dan kawan–kawan sampai dengan tahun 1950.
+                    <p class="fst-italic">
+                      Selanjutnya oleh Bapak Residen Lampung yaitu Mr.Gele Harun ditempatkan satu Kompi Coeps 
+                      Tjandangan Nasional (CTN) yang didatangkan dari Jawa Timur, Compi C dibawa Pimpinan Bapak Lettu Suprapto, 
+                      dan rombongan Compi C ini diberikan areal tanah Perkebunan Sungai Langka Untuk dijadikan kegiatan/usaha yang dipimpin langsung oleh 
+                      Bapak Sadikin dan KI C Lettu Suprapto yang meliputi kegiatan usaha:
+                    </p> 
+
+                    <ol class="custom-list">
+                      <li>Perkebunan Kopi dan Karet</li>
+                      <li>Pembuatan Dam Pengairan (Dam C) di Wilayah Linti</li>
+                      <li>Kolam Permandian</li>
+                      <li>Pembangunan Perumahan untuk anggota Compi C.</li>
+                    </ol>
+
+                    <p class="fst-italic">
+                    Dalam Perkembangan selanjutnya pada tanggal 3 Mei 1954 berdasarkan Keputusan Presiden RI seluruh  CTN tersebut dikembalikan pada masyarakat.
+                    </p>
+
+                    <p class="fst-italic">
+                    Sehubungan dengan ini maka seluruh penduduk yang berada di areal Sungai Langka digabungkan kepada Pemerintah Desa Bernung dengan status pedukuhan 
+                    yang dipimpin oleh seorang Kamitua,yang dijabat oleh Bapak Sadikin.
+                    </p>
+
+                    <p class="fst-italic">
+                    Dengan dibubarkannya CTN dan kembalinya seluruh anggotanya ke masyarakat, tanah bekas perkebunan tersebut dikelola oleh penduduk setempat. Perkembangan penduduk pun menjadi sangat pesat, terlihat dari meningkatnya taraf hidup masyarakat dan kemajuan pertanian yang kini tidak hanya bergantung pada hasil perkebunan saja.
+                    </p>
+
+                    <p class="fst-italic">
+                    Pada tanggal 4 Januari 1963, pengelolaan areal perkebunan yang dipimpin Bapak Sabichun diserahkan dan digabungkan Kepada PTP.VII Nusantara Berulu.
+
+                    Dalam hal kepemimpinan, pemerintah pedukuhan juga terjadi pengantian Kamitua pada tahun 1967 dari Bapak  S. Sadikin Kepada Bapak M. Hasyim. Dengan perkembangan yang pesat di pedukuhan Sungai Langka pada waktu itu mendorong  para toko dan pemuka masyarakat untuk mengajukan permohonan kepada Pemerintah agar status Sungai Langka dapat dipisahkan dari Desa Bernung sebagai desa induknya menjadi Desa Definitif atas Usul Permohonan tersebut pada tahun 1972 telah diadakan peninjauan oleh suatu tim dari provinsi Lampung yang tergabung dalam "Dewan Land Use" pada waktu itu. Setelah melalui proses peninjauan dan penelitian pada tahun 1975 resmilah Sungai Langka menjadi status desa pemekaran dari desa induk Bernung dengan sebuah Kampung Susukan, hal ini tercantum dalam Surat Keputusan Bupati Kepala Daerah Tingkat II Lampung Selatan Nomor 108/V/Des. Tanggal 15 September 1975 dan ditujukan sebagai pejabat Kepala Kampung Susukan adalah M. Hasyim dengan surat Keputusan Bupati Kepala Daerah Tingkat II Lampung Selatan Nomor: 109/Des/tanggal 15 September 1975.
+                    </p>
+
+                    <p class="fst-italic">
+                    Desa Sungai Langka memilik delapan Wilayah Pedusunan yang meliputi  Dusun  Sula IA ,IB, IIA, IIB, III A, IIIB, IVA  dan  IVB. Kemudian dengan Surat Keputusan Bupati Kepala Daerah Tingkat II Lampung Selatan Nomor: 46/V/Des tanggal 2 Agustus 1976 jabatan Kepala Kampung Susukan atas nama Bapak M.  Hasyim diganti oleh Bapak S. Hadi Utomo dengan sebutan Pejabat Kepala Desa Sungai Langka sampai dengan tahun 1980.
+                    </p>
+
+                    <p class="fst-italic">
+                    Untuk pertama kali pada tahun 1980, Desa Sungai Langka melaksanakan pemilihan Kepala Desa yang pada waktu itu terpilih menjadi Kepala Desa adalah Bapak Sujono yang kemudian ditetapkan dengan surat keputusan Bupati Kepala Daerah Tingkat II Lampung Selatan Nomor: OP.410/435/Des/1980.
+                    </p>
+
+                    <p class="fst-italic">
+                    Masa kepemimpinan Bapak Sujono hanya sampai tahun 1986, karena pada tanggal 5 April 1986 Bapak Sujono meninggal dunia dan untuk mengisi kekosongan jabatan Kepala Desa tersebut diangkatlah sebagai pejabat sementara yaitu Bapak Imam Sujono sesua dengan surat keputusan Bupati Kepala Daerah Tingkat II Lampung  Selatan Nomor: OP,410/44/Des/1986 tanggal 28 Agustus 1986. 
+                    </p>
+
+                    <p class="fst-italic">
+                    Pada tanggal 9 Desember 1987 telah diadakan pemilihan Kepala Desa yang dimenangkan oleh Bapak Sukijo Hadi dengan surat keputusan Bupati Kepala Daerah Tingkat II Lampung Selatan Nomor: 104/PEMDES/HK-LS/1987 dan dilantik pada tanggal 28 April 1988.
+                    </p>
+                     
+                    <ul> 
+                    </ul>
+                    </p>
+                  </div>
+                </li>
+
+                
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>02</span>
+                    Pemerintahan Desa Sungai Langka<i class="bx bx-chevron-down icon-show"></i><i
+                      class="bx bx-chevron-up icon-close"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <div style="text-align: left; font-style: unset;">
+                      <p class="fst-italic">
+                        Batas-batas Wilayah
+                        <ol class="custom-list">
+                          <li>Sebelah Utara: Desa Bernung</li>
+                          <li>Sebelah Timur: Desa Kurungan Nyawa</li>
+                          <li>Sebelah Selatan: Hutan Negara atau Gunung Betung</li>
+                          <li>Sebelah Barat: Desa Wiyono dan PTPN VII Way Berulu</li>
+                        </ol>
+                    </div>
+                  </div>
+                </li>
+            </div>
+            
+          </div>
+          <div class="col-lg-4 align-items-stretch order-2 order-lg-2 img"
+            style='background-image: url("assets/img/balaidesa.jpeg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- Profesi Section -->
+    <section id="datapenduduk" class="DataPenduduk">
+      <div class="container section-title" data-aos="fade-up">
+     </div>
+      <ul data-aos="fade-up" data-aos-delay="100">
+      <div id="chart_div_kk" class="chart"></div>
+      </section>
+      
+    <section id="datapenduduk" class="DataPenduduk">
+      <div class="container section-title" data-aos="fade-up">
+    </div>
+      <ul data-aos="fade-up" data-aos-delay="100">
+      <div id="chart_div_prof" class="chart"></div>
+      </section>
+
+    <section id="datapenduduk" class="DataPenduduk">
+      <div class="container section-title" data-aos="fade-up">
+    </div>
+      <ul data-aos="fade-up" data-aos-delay="100">
+      <div id="chart_div_pendidikan" class="chart"></div>
+      </section>
+    <!-- / End Profesi Section -->
+    
+    <!-- ======= geo Section ======= -->
+    <section id="geo" class="geo">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19985.141837320803!2d105.16083871247278!3d-5.386135913484725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40d1cb17f3090d%3A0x93180b08c3e31592!2sSungai%20Langka%2C%20Kec.%20Gedong%20Tataan%2C%20Kabupaten%20Pesawaran%2C%20Lampung!5e1!3m2!1sid!2sid!4v1721540928050!5m2!1sid!2sid" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
+            <h3>Geografis</h3>
+            <p class="fst-italic">
+              Letak dan luas Wilayah Desa sungai Langka adalah sebagai berikut:
+            </p>
+            <p><i class="ri-check-double-line"></i> Luas Wilayah: 900 hektar (ha)</p>
+            <p><i class="ri-check-double-line"></i> Letak Wilayah: 100–400 m dari atas permukaan laut dengan suhu udara 15⁰-30⁰.</p>
+            
+            <p class="fst-italic">
+              Kondisi Geografis:
+            </p>
+            <p><i class="ri-check-double-line"></i> Ketinggian dari Permukaan Laut: 376 m</p>
+            <p><i class="ri-check-double-line"></i> Banyak Curah Hujan: 4 mm</p>
+            <p><i class="ri-check-double-line"></i> TOPIGRAFI (Dataran Tinggi, Rendah, Pantai)</p>
+            <p><i class="ri-check-double-line"></i> Suhu Derajat Rata-rata: 26 °C</p>
+            
+
+            <title>Tata Guna Tanah Desa Sungai Langka</title>
+        <h2>Tata Guna Tanah Desa Sungai Langka:</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Luas Pemukiman (ha)</th>
+                    <th>Perkebunan (ha)</th>
+                    <th>Pemakaman (ha)</th>
+                    <th>Lapangan (ha)</th>
+                    <th>Jalan Desa (ha)</th>
+                    <th>Perkantoran (ha)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>387</td>
+                    <td>482</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>23</td>
+                    <td>1</td>
+                      <caption>Sumber: BPS Kecamatan Gedong Tataan Dalam Angka Tahun 2022.</caption>                   
+                </tr>
+            </tbody>
+        </table>
+          </div>
+        </div>
+      </div>
+    </section><!-- End geo Section -->
+
+    <!-- Services Section -->
+    <section id="apbdesa" class="APBDesa">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+           <h2>APBDesa Tahun Anggaran 2024</h2>
+      </div><!-- End Section Title -->
+
+      <!-- Table Pendapatan -->
+      <ul data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="text-center-mb-1">
+          <strong>Pendapatan Rp. 1.809.931.380,00</strong>
+        </div>
+      <div class="table-wrapper">
+        <table class="table-pendapatan">
+          <thead>
+              <tr>
+                  <th>Pendapatan Asli Desa</th>
+                  <th>Pendapatan Transfer</th>
+                  <th>Dana Desa</th>
+                  <th>Bagi Hasil Pajak dan Retribusi</th>
+                  <th>Alokasi Dana Desa</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Rp. 32.918.350,00</td>
+                  <td>Rp. 1.777.013.030,00</td>
+                  <td>Rp. 1.080.775.000,00</td>
+                  <td>Rp. 65.747.858,00</td>
+                  <td>Rp. 630.490.172,00</td>
+              </tr>
+          </tbody>
+      </table>
+      </div> 
+    </div>
+    <!-- End Table Pendapatan -->
+
+    <!-- Table Belanja -->
+    <ul data-aos="fade-up" data-aos-delay="200">
+    <div class="container">
+      <div class="text-center-mb-2">
+        <strong>Belanja Rp. 1.803.809.574,00</strong>
+      </div>
+
+      <div class="table-wrapper">
+            <table class="table-belanja">
+                <thead>
+                    <tr>
+                        <th>Bidang Penyelenggaraan Pemerintahan</th>
+                        <th>Bidang Pelaksanaan Pembangunan</th>
+                        <th>Bidang Pembinaan Kemasyarakatan</th>
+                        <th>Bidang Pemberdayaan Masyarakat</th>
+                        <th>Bidang Penanggulangan Bencana Darurat dan Mendesak</th>
+                        <th>Surplus/ (Defisit)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rp. 1.069.815.606,00</td>
+                        <td>Rp. 419.951.538,00</td>
+                        <td>Rp. 140.234.800,0</td>
+                        <td>Rp. 48.607.630,00</td>
+                        <td>Rp. 125.200.000,00</td>
+                        <td>Rp. 6.121.806,00</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+          <!-- End Table Belanja -->
+
+          <!-- Table Pembiayaan -->
+          <ul data-aos="fade-up" data-aos-delay="300">
+          <div class="container">
+          <div class="text-center-mb-3">
+            <strong>Sisa Lebih Pembiayaan Rp. 0,00</strong>
+          </div>
+            <div class="table-wrapper">
+              <table class="table-pembiayaan">
+                    <thead>
+                        <tr>
+                            <th>Penerimaan Pembiayaan</th>
+                            <th>Pengeluaran Pembiayaan</th>
+                            <th>Pembiayaan Netto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>Rp. 8.878.194,00</td>
+                          <td>Rp. 15.000.000,00</td>
+                          <td>Rp. (6.121.806,00)</td>               
+                        </tr>
+                    </tbody>
+                  </table>
+            </div>
+            </div>
+              <!-- End Table Pembiayaan -->
+        </div>
+      </div>
+        </section><!-- /Services Section -->
+
+        <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Realisasi Pelaksanaan APBDesa Tahun Anggaran 2023</h2>
+   </div><!-- End Section Title -->
+
+          <!-- Services Item -->
+          <div class="container">
+            <div class="text-center-mb-4">
+              <strong>Uraian Pendapatan Desa</strong>
+            </div>
+            <div class="table-wrapper">
+              <table class="table-realisasi-pendapatan">
+                <thead>
+                    <tr>
+                        <th>Uraian Pendapatan</th>
+                        <th>Anggaran</th>
+                        <th>Realisasi</th>
+                        <th>Lebih/Kurang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>PENDAPATAN ASLI DESA</td>
+                        <td>Rp. 19.885.000,00</td>
+                        <td>Rp. 19.885.000,00</td>
+                        <td>Rp. 0,00</td>
+                    </tr>
+                    <tr>
+                        <td>PENDAPATAN TRANSFER</td>
+                        <td>Rp. 1.776.249.487,00</td>
+                        <td>Rp. 1.749.425.370,00</td>
+                        <td>Rp. 26.824.117,00</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;DANA DESA</td>
+                        <td>Rp. 1.067.741.000,00</td>
+                        <td>Rp. 1.067.741.000,00</td>
+                        <td>Rp. 0,00</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;BAGI HASIL PAJAK DAN RETRIBUSI</td>
+                        <td>Rp. 72.018.315,00</td>
+                        <td>Rp. 47.406.176,00</td>
+                        <td>Rp. 24.612.139,00</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;&nbsp;ALOKASI DANA DESA</td>
+                        <td>Rp. 630.490.172,00</td>
+                        <td>Rp. 628.278.194,00</td>
+                        <td>Rp. 2.211.978,00</td>
+                    </tr>
+                    <tr>
+                        <td>PENDAPATAN LAIN-LAIN</td>
+                        <td>Rp. 1.457.842,00</td>
+                        <td>Rp. 1.457.842,00</td>
+                        <td>Rp. 0,00</td>
+                    </tr>
+                    <tr class="total">
+                        <td>JUMLAH PENDAPATAN</td>
+                        <td>Rp. 1.797.592.329,00</td>
+                        <td>Rp. 1.770.768.212,00</td>
+                        <td>Rp. 26.824.117,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- End Service Item -->
+
+        <!-- Services Item -->
+        <div class="container">
+          <div class="text-center-mb-5">
+            <strong>Uraian Belanja Desa</strong>
+          </div>
+          <div class="table-wrapper">
+            <table class="table-realisasi-belanja">
+              <thead>
+                  <tr>
+                      <th>Uraian Belanja</th>
+                      <th>Anggaran</th>
+                      <th>Realisasi</th>
+                      <th>Lebih/Kurang</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>BIDANG PENYELENGGARAAN PEMERINTAHAN DESA</td>
+                      <td>Rp. 1.109.838.829,00</td>
+                      <td>Rp. 1.082.882.283,00</td>
+                      <td>Rp. 26.956.546,00</td>
+                  </tr>
+                  <tr>
+                      <td>BIDANG PELAKSANAAN PEMBANGUNAN DESA</td>
+                      <td>Rp. 346.704.520,00</td>
+                      <td>Rp. 337.604.520,00</td>
+                      <td>Rp. 9.100.000,00</td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;&nbsp;BIDANG PEMBINAAN KEMASYARAKATAN</td>
+                      <td>Rp. 168.664.230,00</td>
+                      <td>Rp. 168.664.230,00</td>
+                      <td>Rp. 0,00</td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;&nbsp;BIDANG PEMBERDAYAAN MASYARAKAT</td>
+                      <td>Rp. 64.384.750,00</td>
+                      <td>Rp. 64.737.000,00</td>
+                      <td>Rp. 352.250,00</td>
+                  </tr>
+                  <tr>
+                      <td>&nbsp;&nbsp;BIDANG PENANGGULANGAN BENCANA, DARURAT, DAN MENDESAK DESA</td>
+                      <td>Rp. 108.000.000,00</td>
+                      <td>Rp. 108.000.000,00</td>
+                      <td>Rp. 0,00</td>
+                  </tr>
+                  <tr class="total">
+                      <td>JUMLAH BELANJA</td>
+                      <td>Rp. 1.797.592.329,00</td>
+                      <td>Rp. 1.761.888.033,00</td>
+                      <td>Rp. 35.704.296,00</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+      <!-- End Service Item -->
+
+      <!-- Services Item -->
+      <div class="container">
+        <div class="text-center-mb-6">
+          <strong>Uraian Pembiayaan Desa</strong>
+        </div>
+        <div class="table-wrapper">
+          <table class="table-realisasi-pembiayaan-desa">
+            <thead>
+                <tr>
+                    <th>Uraian Pembiayaan</th>
+                    <th>Anggaran</th>
+                    <th>Realisasi</th>
+                    <th>Lebih/Kurang</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>SURPLUS/ (DEFISIT)</td>
+                    <td>Rp. -</td>
+                    <td>Rp. 8.880.179,00</td>
+                    <td>Rp. (8.880.179,00)</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;SILPA/ SILPA TAHUN BERJALAN</td>
+                    <td>Rp. -</td>
+                    <td>Rp. 8.880.179,00</td>
+                    <td>Rp. (8.880.179,00)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- End Service Item -->
+        </div>
+      </div>
+        </section><!-- / End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>KEGIATAN DAN UMKM </h2>
+        </div>
+
+        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
+          <li data-filter="*" class="filter-active">SEMUA</li>
+          <li data-filter=".filter-app">KEGIATAN</li>
+          <li data-filter=".filter-card">UMKM</li>
+          <li data-filter=".filter-web">ACARA</li>
+        </ul>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/upacara-hutri79.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Upacara Peringatan HUT RI</h4>
+              <p>Ke-79</p>
+              <a href="assets/img/upacara-hutri79.JPG" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/sosialisasi-umkm.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Sosialiasi Branding UMKM</h4>
+              <p>Desa Sungai Langka</p>
+              <a href="assets/img/sosialisasi-umkm.JPG" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/kepanitiaan-kopayapi.jpg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Kepanitiaan Acara KOPAYAPI</h4>
+              <p>Desa Sungai Langka</p>
+              <a href="assets/img/kepanitiaan-kopayapi.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/UMKM-Nangka.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>UMKM Keripik Pisang & Nangka</h4>
+              <p>Zahwa Aulia Wijaya</p>
+              <a href="assets/img/UMKM-Nangka.JPG" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+              <a href="http://127.0.0.1:5500/Details/umkm-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/bareng-lurah.jpeg" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Foto Bersama Bapak dan Ibu Kepala Desa</h4>
+              <p>Desa Sungai Langka</p>
+              <a href="assets/img/bareng-lurah.jpeg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-img"><img src="assets/img/Senam.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Senam Pagi</h4>
+              <p>Sehat!</p>
+              <a href="assets/img/Senam.jpg" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-img"><img src="assets/img/UMKM-Kopi.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>UMKM Kopi Robusta</h4>
+              <p>Kopi Kang Slamet</p>
+              <a href="assets/img/UMKM-Kopi.JPG" data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+              <a href="http://127.0.0.1:5500/Details/kangslamet.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-img"><img src="assets/img/dzikir-bersama.JPG" class="img-fluid" alt=""></div>
+            <div class="portfolio-info">
+              <h4>Acara Dzikir Bersama</h4>
+              <p>Menyambut HUT RI ke-79</p>
+              <a href="assets/img/dzikir-bersama.JPG data-gallery="portfolioGallery"
+                class="portfolio-lightbox preview-link" title=""><i class="bx bx-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- Team Section -->
+    <section id="pariwisata" class="Pariwisata dan Rekreasi">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Informasi Pariwisata dan Rekreasi</h2>
+      </div><!-- End Section Title -->
+
+      <div class="swiper-wrapper align-items-center">
+
+          <!-- Slide 1 -->
+           <ul data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-slide">
+            <section class="destination">
+              <h2>Kolam Pemandian Pekon Janda</h2>
+              <img src="assets/img/kolam-pemandian.jpg" alt="Kolam Pemandian Alami">
+              <p>
+                  Kolam Pemandian Alami di Desa Sungai Langka merupakan destinasi yang ideal bagi pengunjung yang ingin menikmati kesegaran air alami di tengah alam. Kolam ini terletak di kawasan yang dikelilingi oleh pepohonan hijau, memberikan suasana yang tenang dan sejuk. Airnya yang jernih berasal dari mata air pegunungan, menawarkan pengalaman berendam yang menyegarkan.
+              </p>
+              <ul>
+                <li><strong>Lokasi:</strong> <a href="https://maps.app.goo.gl/sDkiBfsgHhwFiAJu6" target="_blank">Klik di sini</a></li>
+                <li><strong>Jam Operasional:</strong> Buka 24 Jam</li>
+                <li><strong>Tiket Masuk:</strong> Gratis Biaya Masuk</li>
+                <li><strong>Fasilitas:</strong> Area parkir, Kamar mandi, Warung makan ringan.</li>
+                <li><strong>Aktivitas yang Dapat Dilakukan:</strong> Berendam dan berenang</li>
+              </ul>
+            </section>
+          </div>
+           </li>
+
+          <!-- Slide 2 -->
+          <ul data-aos="fade-up" data-aos-delay="200">
+          <div class="swiper-slide">
+            <section class="destination">
+              <h2>Tempat Camping Sukma Ilang</h2>
+              <img src="assets/img/sukmailang.jpg" alt="Tempat Camping Gunung Sukma Ilang">
+              <p>
+                  Tempat Camping Gunung Sukma Ilang menawarkan pengalaman berkemah yang unik dengan pemandangan spektakuler dari puncak gunung. Area camping ini cocok untuk pecinta alam yang ingin menikmati suasana malam di luar ruangan dengan udara yang segar dan pemandangan bintang yang menakjubkan. Gunung Sukma Ilang juga merupakan tempat yang ideal untuk trekking dan eksplorasi alam.
+              </p>
+              <ul>
+                  <li><strong>Lokasi:</strong> <a href="https://maps.app.goo.gl/y4dfgz8AgjbuZnpc8" target="_blank">Klik di sini</a></li>
+                  <li><strong>Jam Operasional:</strong> Terbuka setiap hari</li>
+                  <li><strong>Biaya Camping:</strong> Gratis Biaya Masuk</li>
+                  <li><strong>Fasilitas:</strong> Area camping dengan tempat perapian, Tempat parkir kendaraan</li>
+                  <li><strong>Aktivitas yang Dapat Dilakukan:</strong> Camping, Trekking, Menikmati pemandangan matahari terbit dan terbenam.</li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </div>
+      </li>
+      <!-- End Team Member -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <section id="struktur" class="Struktur Desa">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Struktur Desa</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <!-- FAQ 1 -->
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> 
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-1" class="collapsed">
+                KEPALA DESA 
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
+                <div class="faq-content">
+                  <img src="assets/img/Kades_.png" alt="Erwan Sukijo" class="faq-image">
+                  <p class="faq-text">Erwan Sukijo, S.P</p>
+                </div>
+              </div>
+            </li>
+        
+            <!-- FAQ 2 -->
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> 
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+                SEKRETARIS DESA 
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <div class="faq-content">
+                  <p class="faq-text">Junaedi Abdullah</p>
+                </div>
+              </div>
+            </li>
+        
+            <!-- FAQ 3 -->
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> 
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+                KASI DESA 
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <div class="faq-content">
+                  <ol class="sub-list">
+                    <li><p class="faq-text-3">Rois Adi Irawan, S.Pd (KASI Pemerintahan)</p></li>
+                    <li><p class="faq-text-3">Soleman, S.T (KASI Kesejahteraan)</p></li>
+                    <li><p class="faq-text-3">Erfangi (KASI Pelayanan)</p></li>
+                  </ol>
+                </div>
+              </div>
+            </li>
+        
+            <!-- FAQ 4 -->
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> 
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">
+                KAUR DESA 
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <div class="faq-content">
+                  <ol class="sub-list">
+                    <li><p class="faq-text-4">Salasa Budi Sutrisno (KAUR Perencanaan)</p></li>
+                    <li><p class="faq-text-4">Imam Munazar (KAUR TU & UMUM)</p></li>
+                    <li><p class="faq-text-4">Subagiyo (KAUR Keuangan)</p></li>
+                  </ol>
+                </div>
+              </div>
+            </li>
+
+            <!-- FAQ 5 -->
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i> 
+              <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">
+                KEPALA DUSUN beserta KETUA RT
+                <i class="bx bx-chevron-down icon-show"></i>
+                <i class="bx bx-chevron-up icon-close"></i>
+              </a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <div class="faq-content">
+                  <ul class="list-unstyled">
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-1" class="collapsed">
+                          <p class="faq-text-1">Sukarjo (Kepala Dusun I)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-1" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-1">Waras Pujiono (Ketua RT I)</p></li>
+                            <li><p class="faq-text-1">Dedi Firmansyah (Ketua RT II)</p></li>
+                            <li><p class="faq-text-1">Suprono (Ketua RT III)</p></li>
+                            <li><p class="faq-text-1">Sugiono (Ketua RT IV)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-2" class="collapsed">
+                          <p class="faq-text-2">Prastio Handoko (Kepala Dusun II)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-2" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-2">Budiyanto (Ketua RT I)</p></li>
+                            <li><p class="faq-text-2">Subardi (Ketua RT II)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-3" class="collapsed">
+                          <p class="faq-text-3">Alvi Robi Taroreh (Kepala Dusun III)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-3" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-3">Harmanto (Ketua RT I)</p></li>
+                            <li><p class="faq-text-3">Mujianto (Ketua RT II)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-4" class="collapsed">
+                          <p class="faq-text-4">Suwardi (Kepala Dusun IV)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-4" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-4">Saipul Pribadi (Ketua RT I)</p></li>
+                            <li><p class="faq-text-4">Sukadir (Ketua RT II)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-5" class="collapsed">
+                          <p class="faq-text-5">Bibit Suyanto (Kepala Dusun V)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-5" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-5">Sutiyoso (Ketua RT I)</p></li>
+                            <li><p class="faq-text-5">Suryono (Ketua RT II)</p></li>
+                            <li><p class="faq-text-5">Wagino (Ketua RT III)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-6" class="collapsed">
+                          <p class="faq-text-6">Budi Antriono (Kepala Dusun VI)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-6" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-6">Subur AD (Ketua RT I)</p></li>
+                            <li><p class="faq-text-6">Umaedi (Ketua RT II)</p></li>
+                            <li><p class="faq-text-6">Sudiono (Ketua RT III)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-7" class="collapsed">
+                          <p class="faq-text-7">Sukardi (Kepala Dusun VII)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-7" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-7">Suroso (Ketua RT I)</p></li>
+                            <li><p class="faq-text-7">Selamet (Ketua RT II)</p></li>
+                            <li><p class="faq-text-7">Baderi (Ketua RT III)</p></li>
+                            <li><p class="faq-text-7">Eko Yuwono (Ketua RT IV)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-8" class="collapsed">
+                          <p class="faq-text-8">Priyo Sutoto (Kepala Dusun VIII)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-8" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-8">Jatmiko (Ketua RT I)</p></li>
+                            <li><p class="faq-text-8">M. Yatin (Ketua RT II)</p></li>
+                            <li><p class="faq-text-8">Maschuri (Ketua RT III)</p></li>
+                            <li><p class="faq-text-8">Muhtar Efendi (Ketua RT IV)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-9" class="collapsed">
+                          <p class="faq-text-9">Sumariyanto (Kepala Dusun IX)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-9" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-9">Mudiono (Ketua RT I)</p></li>
+                            <li><p class="faq-text-9">Sukarjono (Ketua RT II)</p></li>
+                            <li><p class="faq-text-9">Darmaji (Ketua RT II)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+
+                      <li>
+                        <a data-bs-toggle="collapse" data-bs-target="#faq-text-10" class="collapsed">
+                          <p class="faq-text-10">Marsudi (Kepala Dusun X)</p>
+                          <i class="bx bx-chevron-down icon-show"></i>
+                          <i class="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div id="faq-text-10" class="collapse">
+                          <ol class="sub-list">
+                            <li><p class="faq-text-10">Paiman (Ketua RT I)</p></li>
+                            <li><p class="faq-text-10">Bayu Anggara (Ketua RT II)</p></li>
+                            <li><p class="faq-text-10">Rohman (Ketua RT II)</p></li>
+                          </ol>
+                        </div>
+                      </li>
+                  </section>
+    <!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1"> </div>
+        <div class="section-title">
+          <h2>Kontak dan Media Sosial</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 d-flex flex-column center-content-centera align-items-stretch order-2 order-lg-1"> </div>
+          <div class="info">
+
+            <div class="facebook">
+              <i class="bi bi-facebook"></i>
+              <h4>Facebook</h4>
+              <p style="margin: 0%;"><a href="https://web.facebook.com/groups/195536763818117/?_rdc=1&_rdr" target="_blank">Desa Sungai Langka</a></li></p>
+            </div>
+            
+            <div class="instagram">
+              <i class="bi bi-instagram"></i>
+              <h4>Instagram</h4> 
+              <p style="margin: 0%;"><a href="https://www.instagram.com/sungailangka_simpatik/" target="_blank">@sungailangka_simpatik</a></li></p>
+            </div>
+
+            <div class="youtube">
+              <i class="bi-play-circle"></i>
+              <h4>Youtube</h4>
+              <p style="margin: 0%;"><a href=" https://www.youtube.com/@sulasimpatiktv9365" target="_blank">@sulasimpatiktv9365</a></li></p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-whatsapp"></i>
+              <h4>WhatsApp</h4>
+              <p style="margin: 0%;"> +62 856-0974-5731 (Ibnu) </p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email</h4>
+              <p style="margin: 0%;">sungailangka.gdtataan@gmail.com </p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2396072467836!2d105.1636204!3d-5.380395399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40d1cfd2424db1%3A0x1b3539519b196478!2sBalai%20Desa%20Sungai%20Langka!5e0!3m2!1sid!2sid!4v1721540864255!5m2!1sid!2sid" width="1050" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+      </div>
+      </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PKPM IIB Darmajaya 2024</span></strong>
+      </div>
+      <div class="credits">
+        Designed by <a href=>PKPM IIB Darmajaya 2024</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
